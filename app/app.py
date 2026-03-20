@@ -16,6 +16,7 @@ def connect_db():
 @app.route('/')
 def home():
     try:
+        print("Attempting to connect to MySQL...")
         conn = connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT DATABASE();")
