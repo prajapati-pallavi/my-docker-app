@@ -17,6 +17,7 @@ def connect_db():
 def home():
     try:
         print("Attempting to connect to MySQL...")
+        print("Let's learn Docker + Git + GIthub")
         conn = connect_db()
         cursor = conn.cursor()
         cursor.execute("SELECT DATABASE();")
