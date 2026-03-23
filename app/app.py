@@ -22,7 +22,7 @@ def home():
         cursor = conn.cursor()
         cursor.execute("SELECT DATABASE();")
         result = cursor.fetchone()
-        return f"Connected to MySQL: {result}"
+        return f"Updated App Working in EC2 Connected to MySQL: {result}"
     except Exception as e:
         return f"Error: {e}"
 
